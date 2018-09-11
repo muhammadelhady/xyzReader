@@ -20,6 +20,11 @@
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
 
     </style>
+    <color name="primary">#6200EE</color>
+    <color name="secondary">#03dae5</color>
+    <color name="background">#FFF</color>
+    <color name="txt_background">#333</color>
+
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>

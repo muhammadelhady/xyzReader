@@ -6,6 +6,7 @@
     android:layout_marginRight="4dp"
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
+    android:elevation="@dimen/cardview_default_elevation"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?selectableItemBackground">
@@ -33,7 +34,7 @@
             android:paddingTop="16dp"
             android:paddingRight="16dp"
             android:paddingBottom="4dp"
-            android:textColor="@color/black"
+            android:textColor="@color/txt_background"
             android:ellipsize="end"
             android:maxLines="4" />
 
