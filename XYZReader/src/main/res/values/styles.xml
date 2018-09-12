@@ -18,12 +18,15 @@
 <resources>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">#03A9F4</item>
+        <item name="android:colorPrimaryDark">#0288D1</item>
 
+        <item name="android:colorAccent">#448AFF</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#757575</item>
+
+        <item name="android:divider">#BDBDBD</item>
     </style>
-    <color name="primary">#6200EE</color>
-    <color name="secondary">#03dae5</color>
-    <color name="background">#FFF</color>
-    <color name="txt_background">#333</color>
 
 
     <style name="Theme.Bacon.Detail">

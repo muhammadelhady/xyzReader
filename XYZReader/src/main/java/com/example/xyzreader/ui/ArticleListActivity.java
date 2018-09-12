@@ -20,6 +20,7 @@ import android.text.Html;
 import android.text.format.DateUtils;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -82,7 +83,24 @@ public class ArticleListActivity extends AppCompatActivity implements
     private void refresh() {
         startService(new Intent(this, UpdaterService.class));
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.app_bar, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_share:
+               Snackbar.make(coordinatorLayout,"Shared",Snackbar.LENGTH_LONG).show();
+                return true;
+
+
+
+        }
+        return true;
+    }
     @Override
     protected void onStart() {
         super.onStart();
